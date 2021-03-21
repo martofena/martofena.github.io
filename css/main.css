@@ -11,7 +11,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: block;
+    display: inline;
     margin-right: 20px;
 }
 a {
@@ -20,7 +20,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
-    background-color: #555;
 }
 h1 {
     font-size: 3em;

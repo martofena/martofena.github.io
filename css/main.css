@@ -1,20 +1,10 @@
-
-
 body {
     margin: 0% auto;
     width: 100%;
 }
 
-footer ul {
-    font-family:'Gill Sans', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
 nav ul {
   font-family:'Gill Sans', 'Sans-Serif';
-  font-weight: bold;
   list-style-type: none;
   margin: 0;
   padding: 0px;
@@ -24,18 +14,27 @@ nav ul {
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto;  /* Enable scrolling if the sidenav has too much content */
 }
-
 nav ul li {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align:center
 }
+nav ul li img {
+  border-radius: 50%;
+}
 
+footer ul {
+    font-family:'Gill Sans', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
 footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: #999;
@@ -43,25 +42,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
     font-family:'Gill Sans', 'Sans-Serif';
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
 }
 
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
-
 ul.posts li {
     list-style: none;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
 }

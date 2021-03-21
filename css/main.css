@@ -23,11 +23,19 @@ nav ul li img {
   border-radius: 50%;
 }
 
+#container {
+  height:100%;
+}
+#blurb {
+  height:100%;
+}
+
 footer ul {
     font-family:'Gill Sans', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    margin-left: 20%;
 }
 footer ul li {
     display: inline;

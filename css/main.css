@@ -1,8 +1,8 @@
 
 
 body {
-    margin: 15% auto;
-    width: 85%;
+    margin: 0% auto;
+    width: 100%;
 }
 
 footer ul {
@@ -27,8 +27,8 @@ nav ul {
 
 nav ul li {
     display: block;
-    margin-right: 20px;
-    padding: 8px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align:center
 }
 

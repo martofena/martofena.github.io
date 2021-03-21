@@ -20,7 +20,7 @@ nav ul li {
     margin-bottom: 20px;
     text-align:center
 }
-nav ul li img {
+nav ul li img a {
   border-radius: 50%;
 }
 

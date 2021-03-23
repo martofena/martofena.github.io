@@ -94,6 +94,7 @@ p {
 .column {
       float: left;
 
+  width: 50%;
 }
 .left {
   width: 70%;

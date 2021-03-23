@@ -48,6 +48,9 @@ ul.posts li {
     list-style: none;
     font-family:'Tahoma', 'Sans-Serif', 'Monospace';
 }
+li {
+  font-family:'Tahoma', 'Sans-Serif', 'Monospace';
+}
 a {
     text-decoration: none;
     color: #999;

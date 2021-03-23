@@ -1,65 +1,111 @@
 body {
-    width: 100%;
-    height: 100%;
+    margin: 0;
 }
 
 nav ul {
-  font-family:'Gill Sans', 'Sans-Serif';
+  display: block;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 20%;
-  background-color: #f1f1f1;
+  background-color: #e1cf79;
   height: 100%;    /* Full height */
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto;  /* Enable scrolling if the sidenav has too much content */
+  font-family:'Gill Sans', 'Sans-Serif';
 }
+
 nav ul li {
-    display: block;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align:center
 }
 nav ul li img {
   border-radius: 50%;
+  border: 10px solid #999;
+}
+nav ul li img:hover {
+  border-color: #737373;
 }
 
-footer ul {
-    font-family:'Gill Sans', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+nav ul li a.active {
+  background-color: #e1cf79;
+  color: white;
 }
-footer ul li {
-    display: inline;
-    margin-right: 20px;
-    margin-left: 20%;
+nav ul li a:hover:not(.active) {
+  background-color: #e1cf79;
+  color: #737373;
 }
 
-a {
-    text-decoration: none;
-    color: #999;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
-a:hover {
-    text-decoration: underline;
-}
-
-h1 {
-    font-size: 3em;
-    font-family:'Gill Sans', 'Sans-Serif';
-}
-
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-
 ul.posts {
     font-size: 1.5em;
 }
 ul.posts li {
     list-style: none;
+    font-family:'Tahoma', 'Sans-Serif', 'Monospace';
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover:not(.active) {
+  background-color: white;
+  color: #737373;
+}
+img {
+  border: 3px solid #3097bf;
+}
+img:hover {
+  border-color: #e1cf79;
+}
+
+h1 {
+
+    font-size: 4em;
+    line-height: 0.25em;
+    font-family:'Tahoma', 'Sans-Serif', 'Monospace';
+}
+h2 {
+    font-family:'Tahoma', 'Sans-Serif', 'Monospace';
+}
+h3 {
+    font-family:'Tahoma', 'Sans-Serif', 'Monospace';
+}
+h4 {
+    font-family:'Tahoma', 'Sans-Serif', 'Monospace';
+}
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family:'Tahoma', 'Sans-Serif', 'Monospace';
+    color: #333;
+}
+
+.pdf:hover {
+      text-decoration: underline;
+}
+.txt:hover {
+    text-decoration: underline;
+}
+.column {
+      float: left;
+
+}
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
 }

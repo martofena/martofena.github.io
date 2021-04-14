@@ -21,8 +21,7 @@ nav ul li {
     text-align:center
 }
 nav ul li img {
-  border-radius: 50%;
-  border: 10px solid #999;
+  border: 10px solid #e1cf79;
 }
 nav ul li img:hover {
   border-color: #737373;

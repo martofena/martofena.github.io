@@ -112,6 +112,7 @@ input, select, textarea {
 
 		a:hover {
 			color: #37c0fb;
+			border-bottom: none;
 			border-bottom-color: transparent;
 		}
 
@@ -2371,7 +2372,7 @@ input, select, textarea {
 		}
 
 			table.default tbody tr {
-				border-bottom: solid 1px #e0e0e0;
+				border-bottom: none;
 			}
 
 			table.default td {
@@ -2704,10 +2705,12 @@ input, select, textarea {
 				}
 
 				#banner header h2 a {
+					border-bottom: none;
 					border-bottom-color: transparent;
 				}
 
 					#banner header h2 a:hover {
+						border-bottom: none;
 						border-bottom-color: transparent;
 					}
 
@@ -2778,11 +2781,13 @@ input, select, textarea {
 
 		#footer a {
 			color: inherit;
+			border-bottom: none;
 			border-bottom-color: transparent;
 		}
 
 			#footer a:hover {
 				color: #37c0fb;
+				border-bottom: none;
 				border-bottom-color: transparent;
 			}
 

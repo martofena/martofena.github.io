@@ -1963,6 +1963,7 @@ body {
 
 		.image img {
 			display: block;
+			position: center;
 			border-radius: 5px;
 		}
 

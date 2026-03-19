@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.page-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Each device block: two columns */
+.device-block {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    gap: 20px; /* space between columns */
+    align-items: center;  /* ✅ vertical centering of columns */
+}
+
+/* Left column: images */
+.device-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* stack multiple images vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* spacing between images */
+}
+
+/* Right column: device info */
+.device-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Images inside left column */
+.device-images img {
+    width: 100%;
+    height:300px;
+    object-fit: contain; /* keep aspect ratio */
+}
+
+/* Header inside left column */
+.device-images h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Header inside right column */
+.device-info h3 {
+    margin-top: 0;
+    text-align: left;
+}
+.device-info p {
+    margin-top: 0;
+    text-align: left;
+}
+.device-info img {
+    width: 100%;
+    object-fit: contain; /* keep aspect ratio */
+}
+
+</style>
+</head>
+<body>
+
+<div class="page-container">
+
+    <!-- LoRa NODES -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>LoRa Node<br>(SDI-12-LB, Dragino Technology Co., LTD.)</h3>
+            <img src="images/devices/lora.png" alt="LoRa Node">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/loraf.png" alt="Sensor Features">
+        </div>
+    </div>
+
+    <!-- AIR T AND RH SENSORS -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Air Temperature and Relative Humidity Sensor<br>(S31B-LB, Dragino Technology Co., LTD.)</h3>
+            <img src="images/devices/airtrh.png" alt="Air T and RH Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/airtrhf.png" alt="Sensor Features">
+        </div>
+    </div>
+
+    <!-- LICOR SENSORS -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Actual Evapotranspiration Sensor<br>(LI-710, LI-COR, Inc.)</h3>
+            <img src="images/devices/evapo.png" alt="Evapotranspiration Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/evapof.png" alt="Sensor Features">
+        </div>
+    </div>
+
+    <!-- SOIL MOISTURE SENSORS -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Soil Moisture Sensor<br>(HydraProbe Professional SDI-12, Stevens Water Monitoring Systems)</h3>
+            <img src="images/devices/sm.png" alt="Soil Moisture Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/smf.png" alt="Sensor Features">
+        </div>
+    </div>
+
+    <!-- SOIL REDOX SENSORS -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Soil Redox Sensor<br>(ORP-30-1-D, SWAP Instruments)</h3>
+            <img src="images/devices/sr.png" alt="Soil Redox Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div>
+            <p><b>Parameters:</b> Redox (Pt), Temperature</p>
+            <p><b>Units:</b> Redox in mV, Temperature in °C</p>
+            <p><b>Electrodes:</b> 1 x Redox, 1 x Temperature</p>
+            <p><b>Electrode positions:</b> Redox: 30 cm, Temperature: 29 cm (distance from probe top side)</p>
+            <p><b>Probe dimensions:</b> Length: 39 cm, Diameter: 1.4 cm</p>
+            <p><b>Probe weight:</b> 0.17 kg</p>
+            <p><b>Cable:</b> 5-meter, connector 4 pole</p>
+            <p><b>Measuring range:</b></p>
+            <ul>
+                <li>Redox: -2500 to +2500 mV</li>
+                <li>Temperature: -10 to +50 °C</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SOIL T SENSORS -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Soil Temperature Sensor<br>(LSN50v2-D22, Dragino Technology Co., LTD.)</h3>
+            <img src="images/devices/st.png" alt="Soil T Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/stf.png" alt="Sensor Features">
+        </div>
+    </div>
+
+    <!-- WATER LEVEL SENSORS -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Water Level Sensor<br>(26Xi, KELLER Pressure)</h3>
+            <img src="images/devices/wl.png" alt="Water Level Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/wlf.png" alt="Sensor Features">
+        </div>
+    </div>
+
+    <!-- WATER LEVEL SENSORS 2 -->
+    <div class="device-block">
+        <!-- Left column: images -->
+        <div class="device-images">
+            <h3>Water Level Sensor<br>(LTD. LDDS20, Dragino Technology Co.)</h3>
+            <img src="images/devices/wl2.png" alt="Water Level Sensor">
+        </div>
+
+        <!-- Right column: device info -->
+        <div class="device-info">
+            <img src="images/devices/wlf2.png" alt="Sensor Features">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -899,7 +899,7 @@
 
   const CKAN_PROXY = 'http://localhost:8001/api/ckan';
   const CKAN_BASE = 'https://ckan.fdm.uni-greifswald.de';
-  //const CKAN_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJfWGJkNTJvdDgyMXFCVUl6ZXN1MzRrMzViRlZudXdEZlJ2eU5OcWJQNXFjIiwiaWF0IjoxNzcwNDcyOTQ5fQ.rlcQ5Q46kLps6T8zqYofX46A-aAenIid_e5LWg3UZQQ';
+  const CKAN_API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJfWGJkNTJvdDgyMXFCVUl6ZXN1MzRrMzViRlZudXdEZlJ2eU5OcWJQNXFjIiwiaWF0IjoxNzcwNDcyOTQ5fQ.rlcQ5Q46kLps6T8zqYofX46A-aAenIid_e5LWg3UZQQ';
   const ckanOrgName = 'transregio410';
   const ckanOrgTitle = 'WETSCAPES 2.0';
 
@@ -916,7 +916,7 @@
   const dataColor = '#e07941';
   const futureDataColor = '#8B4513'; // darker brown
   const dataPane = 'data_pane';
-  
+/*  
   async function ckanFetch(action, params = {}) {
     const qs = new URLSearchParams(params).toString();
     const url = `${CKAN_PROXY}/${action}?${qs}`;
@@ -929,8 +929,8 @@
     }
     return json.result;
   } 
-
-/*  async function ckanFetch(action, params = {}) {
+*/
+  async function ckanFetch(action, params = {}) {
     const qs = new URLSearchParams(params).toString();
     const url = `${CKAN_BASE}/api/3/action/${action}?${qs}`;
   
@@ -943,14 +943,15 @@
     });
   
     const json = await res.json();
-  
+    alert(`I am here!`);
+
     if (!json.success) {
       throw new Error(json.error?.message || "CKAN error");
     }
   
     return json.result;
   }
-*/  
+  
   async function collectDatasetObjects(dataset) {
 
     const datasetUrl = `${CKAN_BASE}/dataset/${dataset.name}`;

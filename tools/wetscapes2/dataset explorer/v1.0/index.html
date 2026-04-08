@@ -916,6 +916,8 @@
   const futureDataColor = '#8B4513'; // darker brown
   const dataPane = 'data_pane';
 
+/*
+  
   async function ckanFetchProxy(action, params = {}) {
     const qs = new URLSearchParams(params).toString();
     const url = `${CKAN_PROXY}/${action}?${qs}`;
@@ -928,7 +930,26 @@
     }
     return json.result;
   } 
-
+*/async function ckanFetch(action, params = {}) {
+    const qs = new URLSearchParams(params).toString();
+    const url = `${CKAN_BASE}/api/3/action/${action}?${qs}`;
+  
+    const res = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Authorization": CKAN_API_KEY,
+        "Accept": "application/json"
+      }
+    });
+  
+    const json = await res.json();
+  
+    if (!json.success) {
+      throw new Error(json.error?.message || "CKAN error");
+    }
+  
+    return json.result;
+  }
   async function collectDatasetObjects(dataset) {
 
     const datasetUrl = `${CKAN_BASE}/dataset/${dataset.name}`;
@@ -1125,7 +1146,7 @@
     ckanBaseLayer.clearLayers();
 
     // Get ALL datasets (up to 1000)
-    const packageSearchResult = await ckanFetchProxy('package_search', {
+    const packageSearchResult = await ckanFetch('package_search', {
       fq: `organization:${ckanOrgName}`,
       include_private: true,
       rows: 1000

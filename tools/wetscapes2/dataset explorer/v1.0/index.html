@@ -943,7 +943,6 @@
     });
   
     const json = await res.json();
-    alert(`I am here!`);
 
     if (!json.success) {
       throw new Error(json.error?.message || "CKAN error");

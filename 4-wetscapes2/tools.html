@@ -83,14 +83,16 @@ body {
 <!-- Developed Applications -->
 <div id="developed" class="tab-content active">
 
+    <h3>The following applications represent a part of my individual contribution to the WETSCAPES2.0 project</h3>
 
     <div class="app-container">
         <div class="app-image">
             <img src="images/tools/app-influx/app-influx.png">
         </div>
         <div class="app-info">
-            <p style="text-align: justify;"><b>Short description:</b> This instance of InfluxDB, hosted at the University of Rostock, stores our raw sensor data.</p>
-            <p style="text-align: justify;"><b>Access:</b> restricted to the consortium members</p>
+            <p style="text-align: justify;"><b>Raw Sensor Data Retrieval</b></p>
+            <p style="text-align: justify;"><b>Short description:</b> The instance of InfluxDB, hosted at the University of Rostock, stores our raw sensor data. A mirror backup instance is hosted at the University of Greifswald.</p>
+            <p style="text-align: justify;"><b>Access:</b> Restricted</p>
             <p>
                 <b>Link:</b>
                 <a href="https://sensors.wetscapes.uni-rostock.de:58086/" target="_blank">
@@ -102,16 +104,33 @@ body {
     
     <div class="app-container">
         <div class="app-image">
+            <img src="images/tools/app-grafana/app-grafana.png">
+        </div>
+        <div class="app-info">
+            <p style="text-align: justify;"><b>Raw Sensor Data Monitoring</b></p>
+            <p style="text-align: justify;"><b>Short description:</b> Grafana, hosted at the University of Rostock, fetches InfluxDB sensor data streams and enables the monitoring of their quality. A mirror backup instance is hosted at the University of Greifswald.</p>
+            <p style="text-align: justify;"><b>Access:</b> Restricted</p>
+            <p>
+                <b>Link:</b>
+                <a href="https://sensors.wetscapes.uni-rostock.de:53000/login" target="_blank">
+                    Login
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    <div class="app-container">
+        <div class="app-image">
             <img src="images/tools/app-sdr/app-sdr.png">
         </div>
         <div class="app-info">
-            <p style="text-align: justify;"><b>Short description:</b> This app enables the harmonized (i.e., human-readable) visualization and extraction of sensor data by combining raw data from our InfluxDB instance at the University of Rostock with metadata from the GFZ Sensor Management System.</p>
-            <p style="text-align: justify;"><b>Latest Version:</b> 1.2</p>
-            <p style="text-align: justify;"><b>Access:</b> restricted to the consortium members</p>
+            <p style="text-align: justify;"><b>Harmonized Sensor Data Retrieval</b></p>
+            <p style="text-align: justify;"><b>Short description:</b> The Sensor Data Retrieval app enables the harmonized (i.e., human-readable) visualization and extraction of sensor data by combining raw data from our InfluxDB instance at the University of Rostock with metadata from the GFZ Sensor Management System.</p>
+            <p style="text-align: justify;"><b>Access:</b> Open</p>
             <p>
                 <b>Link:</b>
                 <a href="https://retrieval.wetscapes.uni-rostock.de/" target="_blank">
-                    Open the App
+                    Open App
                 </a>
             </p>
         </div>
@@ -122,13 +141,13 @@ body {
             <img src="images/tools/app-dx/app-dx.png">
         </div>
         <div class="app-info">
-            <p style="text-align: justify;"><b>Short description:</b> This app allows the spatial and temporal access to datasets. The core combines QFieldCloud points and polygons, hosted at the University of Rostock, with the retrieval of CKAN datasets, archived at the University of Greifswald. </p>
-            <p style="text-align: justify;"><b>Latest Version:</b> 1.0</p>
-            <p style="text-align: justify;"><b>Access:</b> restricted to the consortium members</p>
+            <p style="text-align: justify;"><b>Exploring Field and Sensor Datasets</b></p>
+            <p style="text-align: justify;"><b>Short description:</b> The Dataset Explorer app allows the spatial and temporal aggregation access to datasets. The app core combines QFieldCloud points and polygons, hosted at the University of Rostock, with the retrieval of CKAN datasets, archived at the University of Greifswald.</p>
+            <p style="text-align: justify;"><b>Access:</b> Open</p>
             <p>
                 <b>Link:</b>
                 <a href="https://explorer.wetscapes.uni-rostock.de/" target="_blank">
-                    Open the App
+                    Open App
                 </a>
             </p>
         </div>
@@ -139,12 +158,12 @@ body {
             <img src="images/tools/app-piwigo/app-piwigo.png">
         </div>
         <div class="app-info">
-            <p style="text-align: justify;"><b>Short description:</b> This servers stores photos used for field samplings, research purblications, and public relations. It is hosted at the University of Rostock. </p>
-            <p style="text-align: justify;"><b>Access:</b> restricted to the consortium members</p>
+            <p style="text-align: justify;"><b>Short description:</b> This server stores photos from field samplings, research publications, and public relations. It is hosted at the University of Rostock.</p>
+            <p style="text-align: justify;"><b>Access:</b> Restricted</p>
             <p>
                 <b>Link:</b>
                 <a href="https://piwigo.wetscapes.uni-rostock.de/" target="_blank">
-                    Open the Server
+                    View Photos
                 </a>
             </p>
         </div>
